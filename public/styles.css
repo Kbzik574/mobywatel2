@@ -1,58 +1,77 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
 }
 
 header {
-  background-color: #333;
+  background-color: #0056b3;
   color: white;
-  padding: 1rem;
-  text-align: center;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  height: 50px;
 }
 
 nav ul {
   list-style: none;
-  padding: 0;
   display: flex;
-  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-  margin: 0 1rem;
+  margin-left: 1.5rem;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
 
 main {
-  padding: 1rem;
+  padding: 2rem;
+  text-align: center;
 }
 
 section {
   margin-bottom: 2rem;
 }
 
-.service {
-  background-color: #fff;
-  padding: 1rem;
-  margin: 1rem 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.service-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-button {
-  background-color: #007BFF;
+.service {
+  background-color: white;
+  padding: 1.5rem;
+  margin: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 30%;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+button.primary-btn {
+  background-color: #0056b3;
   color: white;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
   cursor: pointer;
+  border-radius: 5px;
 }
 
-button:hover {
-  background-color: #0056b3;
+button.primary-btn:hover {
+  background-color: #003d80;
 }
 
 footer {
